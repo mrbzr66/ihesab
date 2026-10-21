@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#2E7CF6">
+<title>آی‌حساب</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <button id="menuBtn" aria-label="منو">☰</button>
+    <div id="topTitle">آی‌حساب</div>
+    <button id="voiceBtn" class="voicePill" aria-label="حسابیار، دستیار صوتی">🎤 حسابیار</button>
+    <button id="homeBtn" aria-label="خانه">⌂</button>
+  </header>
+
+  <nav id="drawer">
+    <div id="drawerHead">
+      <img id="drawerLogo" src="logo.png" alt="آی‌حساب">
+      <div id="drawerShop">فروشگاه من</div>
+      <div id="drawerSub">حسابداری فروشگاهی</div>
+      <div id="drawerStats"></div>
+    </div>
+    <div id="drawerMenu"></div>
+    <div id="drawerFoot">آی‌حساب · نسخه ۷٫۶</div>
+  </nav>
+  <div id="drawerScrim"></div>
+
+  <main id="view"></main>
+
+  <button id="fab" aria-label="فاکتور فروش جدید">＋</button>
+
+  <nav id="bottomnav"></nav>
+  <div id="modalRoot"></div>
+  <div id="toastRoot"></div>
+</div>
+<script src="xlsx.full.min.js"></script>
+<script src="zxing.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
